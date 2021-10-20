@@ -153,10 +153,25 @@ button {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
   }
 
   .card {
     display: block;
+  }
+
+  .card:nth-child(1) {
+    margin-right: -95px;
+  }
+
+  .card:nth-child(3) {
+    margin-left: -95px;
+  }
+
+  .card.selected {
+    width: 370px;
+    height: 85vh;
+    z-index: 10;
   }
 
   .card > .content-container > img {
